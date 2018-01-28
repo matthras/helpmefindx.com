@@ -36,6 +36,11 @@ const Index = () => (
                 <Button bsStyle="primary">Click Me</Button>
             </Link>
         </div>
+        <div className="btn">
+          <Link href="/exercises/identify-arithmetic-sequence">
+            <Button bsStyle="primary">Identify Arithmetic Sequence</Button>
+          </Link>
+        </div>
 
         {/* Styling using styled-jsx. */}
         <style jsx>{`
