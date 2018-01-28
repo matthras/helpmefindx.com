@@ -27,7 +27,7 @@
     "start": "npm run build && env NODE_ENV=production node app.js",
     "dev": "nodemon --ignore app/ app.js"
   },
-  "eslintConfig" : {
+  "eslintConfig": {
     "extends": "airbnb",
     "settings": {
       "import/core-modules": [
