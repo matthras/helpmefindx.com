@@ -4,20 +4,20 @@ import TopNavbar from './TopNavbar';
 import Body from './Body';
 
 const Theme = ({ children }) => (
-    <div>
-        <TopNavbar />
-        <style dangerouslySetInnerHTML={{ __html: BootstrapStyle }} />
-        <Body>
-        {children}
-        </Body>
-    </div>
+  <div>
+    <TopNavbar />
+    <style dangerouslySetInnerHTML={{ __html: BootstrapStyle }} />
+    <Body>
+      {children}
+    </Body>
+  </div>
 );
 
 Theme.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.element),
-        PropTypes.element
-    ]).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element
+  ]).isRequired,
 };
 
 export default Theme;
