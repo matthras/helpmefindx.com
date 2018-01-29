@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import BootstrapStyle from '../styles/vendor/bootstrap.min.css';
+import TopNavbar from './TopNavbar';
 
 const Theme = ({ children }) => (
     <div>
+        <TopNavbar />
         <style dangerouslySetInnerHTML={{ __html: BootstrapStyle }} />
         {children}
     </div>
