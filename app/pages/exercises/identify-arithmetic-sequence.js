@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Theme from '../../components/Theme';
-import { Button } from 'react-bootstrap' 
+import { Button } from 'react-bootstrap';
+import exercisesStyle from '../../styles/exercises.scss'; 
 
 function UserFeedback(props) {
   if(props.check){
@@ -43,16 +44,17 @@ export default class IdentifyArithmeticSequence extends Component {
     }
     return (
     <Theme>
+    <style dangerouslySetInnerHTML={{ __html: exercisesStyle }} />
     <section>
       <div id="question">
-        Determine the general equation of the following arithmetic sequence: {sequenceArray.join(', ')}
+        Determine the general equation of the following arithmetic sequence: <br /> {sequenceArray.join(', ')}
       </div>
       <div id="submitAnswer">
-        a = <input id="a" type="number"></input>
+        a = <input id="a" type="number"></input><br />
         d = <input id="d" type="number"></input>
       </div>
       <div id="feedback">
-        <Button bsStyle="primary" onClick={this.checkAnswer}>Check your answer!</Button>
+        <Button bsStyle="primary" onClick={this.checkAnswer}>Check your answer!</Button> <br />
         { this.state.showFeedback ? <UserFeedback check={this.state.userSolution} /> : '' }
       </div>
       <div id="solution">
