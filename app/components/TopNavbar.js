@@ -1,4 +1,5 @@
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import Link from 'next/link';
 
 const TopNavbar = () => (
   <Navbar>
@@ -8,8 +9,8 @@ const TopNavbar = () => (
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>
-      <NavItem eventKey={1} href="#">
-        About
+      <NavItem eventKey={1}>
+        <Link href="/about">About</Link>
       </NavItem>
       <NavItem eventKey={2} href="#">
         Contact
